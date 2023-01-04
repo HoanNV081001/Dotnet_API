@@ -19,5 +19,10 @@ namespace Dotnet_API.Data
         [ForeignKey("IdCat")]
         public Category Category{get; set;}
 
+        public ICollection<OrderDetail> OrderDetails {get; set;}
+        public Product(){
+            OrderDetails = new HashSet<OrderDetail>();
+        }
+
     }
 }
