@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "01h5JeRzUaaCIMfmqBlN5nfoHLWzt+rWV7Iwtal53mro4qfxV+AAke9RScIiB9c3w3YUpCmEmC0GuQW4FbXgjg==",
+  "dgSpecHash": "tRuBKLbD8F0kgonI7ZcoE/PLqvuoTrBA8e/J8cVuFRWhN223KsXy+rli5SCNveh7Bxaqxgry5dCFcPkMWaN9ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\hoann\\OneDrive\\Documents\\CodeDev\\Dotnet_Web_API\\WebAPI\\Dotnet_API\\Dotnet_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hoann\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\hoann\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\hoann\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\hoann\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.1\\microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
+    "C:\\Users\\hoann\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.1\\microsoft.aspnetcore.authorization.7.0.1.nupkg.sha512",
+    "C:\\Users\\hoann\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.1\\microsoft.aspnetcore.metadata.7.0.1.nupkg.sha512",
     "C:\\Users\\hoann\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\hoann\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\hoann\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

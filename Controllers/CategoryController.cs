@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Dotnet_API.Data;
 using Dotnet_API.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,10 +21,20 @@ namespace Dotnet_API.Controllers
         }
         [HttpGet]
         public IActionResult GetAll(){
-            var Cat = _context.Categories.ToList();
-            return Ok(Cat);
+            try
+            {
+                 var Cat = _context.Categories.ToList();
+                 return Ok(Cat);
+            }
+            catch 
+            {
+                
+                return BadRequest();
+            }
+           
         }
         [HttpPost]
+        [Authorize]
         public IActionResult CreateNew(CatModel catModel){
            try
            {
@@ -33,7 +44,7 @@ namespace Dotnet_API.Controllers
                 };
                 _context.Add(categories);
                 _context.SaveChanges();
-                return Ok(categories);
+                return StatusCode(StatusCodes.Status201Created, categories);
            }
            catch
            {
@@ -61,6 +72,19 @@ namespace Dotnet_API.Controllers
                 cat.NameCat = catModel.NameCat;
                 _context.SaveChanges();
                 return NoContent();
+            }
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteById(int id){
+            var cat= _context.Categories.SingleOrDefault(c=>c.IdCat==id);
+            if (cat == null)
+            {
+                return NotFound();
+            }else
+            {
+                 _context.Remove(cat);
+                _context.SaveChanges();
+                return StatusCode(StatusCodes.Status200OK);
             }
         }
     }

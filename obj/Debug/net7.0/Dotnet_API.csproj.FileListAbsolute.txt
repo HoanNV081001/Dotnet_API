@@ -275,3 +275,6 @@ C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\obj\D
 C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\obj\Debug\net7.0\Dotnet_API.pdb
 C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\obj\Debug\net7.0\Dotnet_API.genruntimeconfig.cache
 C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\obj\Debug\net7.0\ref\Dotnet_API.dll
+C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\hoann\OneDrive\Documents\CodeDev\Dotnet_Web_API\WebAPI\Dotnet_API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

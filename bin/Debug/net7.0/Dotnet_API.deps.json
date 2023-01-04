@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "Dotnet_API/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.1",
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
           "Microsoft.EntityFrameworkCore.Design": "7.0.1",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.1",
@@ -58,6 +60,38 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.21.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "7.0.1.0",
+            "fileVersion": "7.0.122.56809"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.122.56809"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.122.56809"
           }
         }
       },
@@ -2367,6 +2401,27 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2pZZ1GQExpBV8xdRoS1RbopSXBnZBN6INA4KBb8utk6BDLzqHzfF7PCVPRS9YuPx/UHVOU8SJiPjWpcxTsvghw==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.1",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yhkU+dAvkp1o1ZhihwKFsGy2RXxBaLCohev0HN8yaqfFsV1ThvQIRPh6GKcoPln/ARY23N0gIkOv5zx36HRXhg==",
+      "path": "microsoft.aspnetcore.authorization/7.0.1",
+      "hashPath": "microsoft.aspnetcore.authorization.7.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IY2hcEYR+q4PJ/rsfzakTTeS8UOU14rlYzfTWArJCmfL+jpNeu0pkr7SHiRQbL1MKNz7aT4n3qQG7jcGHQVOjQ==",
+      "path": "microsoft.aspnetcore.metadata/7.0.1",
+      "hashPath": "microsoft.aspnetcore.metadata.7.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/7.0.1": {
       "type": "package",
