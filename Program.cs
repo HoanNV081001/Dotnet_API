@@ -1,5 +1,6 @@
 using System.Text;
 using Dotnet_API.Data;
+using Dotnet_API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -12,8 +13,12 @@ builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var secretKey = builder.Configuration["AppSettings:SecretKey"];
 var secretKeyBytes = Encoding.UTF8.GetBytes(secretKey);
+
+builder.Services.AddScoped<ICatRepository, CatRepository>();
+
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(connectionString));
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.TokenValidationParameters = new TokenValidationParameters
