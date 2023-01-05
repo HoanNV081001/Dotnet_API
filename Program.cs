@@ -15,6 +15,7 @@ var secretKey = builder.Configuration["AppSettings:SecretKey"];
 var secretKeyBytes = Encoding.UTF8.GetBytes(secretKey);
 
 builder.Services.AddScoped<ICatRepository, CatRepository>();
+builder.Services.AddScoped<IProductResposity, ProductResposity>();
 
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(connectionString));
