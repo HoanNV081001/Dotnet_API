@@ -12,6 +12,7 @@ namespace Dotnet_API.Data
         public DbSet<Category> Categories {get; set;}
         public DbSet<Order> Orders {get; set;}
         public DbSet<OrderDetail> OrderDetails{get; set;}
+        public DbSet<User> Users {get; set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
             modelBuilder.Entity<Order>(e=>
@@ -36,6 +37,11 @@ namespace Dotnet_API.Data
                     .WithMany(od => od.OrderDetails)
                     .HasForeignKey(e => e.Id)
                     .HasConstraintName("FK_OrderDetail_Product");
+            });
+            modelBuilder.Entity<User>(entity => {
+                entity.HasIndex(e => e.UserName).IsUnique();
+                entity.Property(e => e.FullName).IsRequired().HasMaxLength(150);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(150);
             });
         }
     }
